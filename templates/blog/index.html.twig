@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue sur votre blog !{% endblock %}
+
+{% block body %}
+    <h1>Bienvenue sur mon site !</h1>
+    <p>Vous pouvez découvrir les différents posts des utilisateurs</p>
+    <a href="{{ path("app_blog_example") }}"> Lien vers la page example</a>
+{% endblock %}

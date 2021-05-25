@@ -1,0 +1,7 @@
+{% extends "base.html.twig" %}
+
+{% for post in posts %}
+    <h1>{{post.title}}</h1>
+    <p>{{post.createdAt|date('j M')}}</p>
+{% endfor %}
+
