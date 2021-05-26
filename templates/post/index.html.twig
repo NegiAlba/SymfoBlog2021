@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SymfoBlog - Les posts{% endblock %}
+
+{% block body %}
+    <h1> Index des posts </h1>
+
+    <div class="posts">
+        {% for post in posts %}
+            <div class="post">
+                <h3>{{post.title}}</h3>
+                <p>{{post.content}}</p>
+                <p>{{post.createdAt|date('j M à H:i:s')}}</p>
+                <p>Crée par {{post.author.email}}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
